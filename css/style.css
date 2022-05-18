@@ -1,0 +1,391 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)) ,url('../Images/Uni_BG.jpg');/*"../ to load from an outside folder "*/
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    padding: 2% 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    height: 90px;
+    border-radius: 75px;
+}
+.navbar{
+    flex: 1;
+    text-align: right;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block; /* To make opt appear in one line */
+    position: relative;
+    padding: 2px 1.25%;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.navbar ul li::after{
+    content: '';
+    width:  0%;
+    height: 2px;
+    background-color: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.text-box h1{
+    font-size: 3.2rem;
+}
+.text-box p{
+    margin: 10px 0px 40px;
+    font-size: 1.25rem;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 12px 36px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    border-radius: 55px;
+    font-size: 0.88rem;
+}
+.hero-btn:hover{
+    background: tomato;
+    border: 1px solid tomato;
+    transition: 0.75s;
+}
+nav .fa-solid{
+    display: none;
+}
+@media(max-width:500px){
+    *{
+        font-size: 0.69rem;
+    }
+    nav img{
+        height: 69px;
+    }
+    .navbar ul li{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        background: tomato;
+        height: 100vh;
+        width: 175px;
+        top: 0px;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.75s;
+    }
+    nav .fa-solid{
+        display: block;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        color: white;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .testi-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+/* Course page  */
+
+.Course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.Course h1{
+    font-size: 3.2rem;
+}
+.Course p{
+    font-size: 1.25rem;
+    padding: 20px;
+    line-height: 24px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+.course-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    background: #fff3f3;
+    transition: 0.5s;
+}
+.course-col h3 {
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 11px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25) ;
+}
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus h1{
+    font-size: 3.2rem;
+}
+.campus p{
+    font-size: 1.25rem;
+    padding: 20px;
+    line-height: 24px;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    transition: 0.75s;
+    cursor: pointer;
+}
+.layer:hover{
+    background: rgba(226, 0, 0, 0.7);
+}
+.layer h3{
+    width: 100%;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* facilities page  */
+
+.faci{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.faci h1{
+    font-size: 3.2rem;
+}
+.faci p{
+    font-size: 1.25rem;
+    padding: 20px;
+    line-height: 24px;
+}
+.faci-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.faci-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.faci-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.faci-col p{
+    padding: 0;
+}
+
+/* Testimonial page  */
+
+.testi{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testi-col{
+    flex-basis: 32%;
+    border-radius: 25px;
+    margin-bottom: 15%;
+    text-align: left;
+    background: #fff3f3;
+    cursor: pointer;
+    display: flex;
+    padding: 15px;
+    margin-inline: -78px;
+    width: 80%;
+}
+.testi-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 25px;
+    border-radius: 50%;
+}
+.testi-col h3{
+    font-size: 1.25rem;
+    text-align: left;
+    margin: 15px 0;
+}
+.testi h1{
+    font-size: 3.2rem;
+}
+.testi p{
+    font-size: 1.25rem;
+    padding: 20px;
+    line-height: 24px;
+}
+.testi-col p{
+    font-size: 1.25rem;
+}
+.testi-col .fa-solid,.testi-col .fa-regular{
+    color: #f44337;
+}
+
+/* Action Page  */
+
+.call2{
+    width: 80%;
+    margin: 100px auto;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../Images/Contact_Us.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+}
+.call2 h1{
+    padding: 0;
+    font-size: 3.2rem;
+    margin-bottom: 40px;
+}
+
+/* footer Page */
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 1.69rem;
+}
+.icons .fa-brands{
+    color: #f44337;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart{
+    color: tomato;
+}
+.fa-dumbbell{
+    color: grey;
+}
+.footer p{
+    font-size: 1.25rem;
+}
+
+/* About Us Page  */
+
+.sub-header{
+    height: 69vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('../Images/About_Us.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+    font-size: 3.2rem;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 35px;
+}
+.about-col{
+    flex-basis: 49%;
+    padding: 30px 2px;
+}
+.about-col img{
+    width: 100%;
+}
+.about-col h1{
+    padding-top: 0;
+    font-size: 3.2rem;
+}
+.about-col p{
+    padding: 15px 0 25px;
+    font-size: 1.25rem;
+}
+.redy{
+    border: 1px solid tomato;
+    background: transparent;
+    color: tomato;
+}
+.redy:hover{
+    color: #fff;
+}
+
+/* ADMISSION */
+

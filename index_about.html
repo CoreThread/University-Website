@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vento University</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+                                    <!-- --------------- Front Page --------------- -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/Uni_LOGO.jpg" alt="Uni-Logo"></a>
+            <div class="navbar" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="ClsMenu()"></i>  <!--closing icon-->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index_about.html">ABOUT</a></li>
+                    <li><a href="index_courses.html">COURSES</a></li>
+                    <li><a href="index_admission.html">ADMISSIONS</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="OpenMenu()"></i>  <!--menu icon-->
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+<!-- ----------------------------------------------------------------------------------------------------------------------- -->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>The University of Vento is one of the leading universities in the world.</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum illum vitae omnis autem quibusdam, perferendis exercitationem voluptate praesentium qui repellendus adipisci fuga corrupti est quia excepturi quidem alias placeat. Fuga reprehenderit aperiam non explicabo placeat laborum maxime totam dolores voluptas. Praesentium velit vero quia ratione.</p>
+            <a href="" class="hero-btn redy">Explore Now</a>
+        </div>
+        <div class="about-col">
+            <img src="images/about.jpg"  alt="">
+        </div>
+    </div>
+</section>
+<!-- ----------------------------------------------------------------------------------------------------------------------- -->
+
+                                    <!-- --------------- Footer --------------- -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit fuga odio aperiam. Qui amet animi nihil numquam consectetur optio fuga facere.<br> Necessitatibus at obcaecati minus cupiditate nisi rerum facilis corrupti libero nemo.</p>
+        <div class="icons">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-reddit"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-discord"></i>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> and <i class="fa-solid fa-dumbbell"></i> by Mint .</p>
+        <br>
+        <p><i class="fa-regular fa-copyright"></i> Mint, Inc.</p>
+    </section>
+                                    <!-- -------------- JS for Toggle Menu --------------- -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function OpenMenu(){
+        navLinks.style.right = "0";
+    }
+    function ClsMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
